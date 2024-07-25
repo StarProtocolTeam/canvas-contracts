@@ -5,7 +5,9 @@
   "main": "",
   "scripts": {
     "build": "forge build",
-    "test": "forge test -vvv"
+    "test": "forge test -vvv",
+    "deploy:scroll:sepolia": "forge script script/DeployXStarBadgeContracts.sol:DeployXStarBadgeContracts --rpc-url https://sepolia-rpc.scroll.io --broadcast 2>&1",
+    "deploy:scroll:mainnet": "forge script script/DeployXStarBadgeContracts.sol:DeployXStarBadgeContracts --rpc-url https://rpc.scroll.io --broadcast 2>&1"
   },
   "author": "",
   "license": "MIT",
